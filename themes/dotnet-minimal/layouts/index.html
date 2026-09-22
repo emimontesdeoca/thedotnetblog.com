@@ -16,91 +16,53 @@
     </div>
   </section>
 
-  {{/* ── Posts + Events Split ─────────────────── */}}
+  {{/* ── Latest Posts ─────────────────────────── */}}
   {{ $news := where .Site.RegularPages "Section" "news" }}
   {{ $blogPosts := where .Site.RegularPages "Section" "posts" }}
   {{ $tutorials := where .Site.RegularPages "Section" "tutorials" }}
   {{ $allContent := union $news (union $blogPosts $tutorials) }}
   {{ $allContent = sort $allContent "Date" "desc" }}
   {{ $allPosts := $allContent | first 9 }}
-  {{ $upcomingEvents := where .Site.RegularPages "Section" "events" }}
-  {{ $upcomingEvents = sort $upcomingEvents "Date" }}
   <section style="padding: 3.5rem 0 3.5rem;">
     <div class="container">
-      <div class="home-split">
-
-        {{/* ── 70% — Latest Posts ─────────────── */}}
-        <div class="home-posts-col">
-          <div class="section-header">
-            <span class="section-title">{{ i18n "section_latest_posts" }}</span>
-            <a href="{{ "/posts" | relLangURL }}" class="section-link" data-umami-event="home-all-posts">{{ i18n "section_all_posts" }}</a>
-          </div>
-          {{ if $allPosts }}
-          <div class="posts-grid" id="home-posts-grid">
-            {{ range $allPosts }}
-            <a href="{{ .RelPermalink }}" class="post-card" data-umami-event="home-post-click" data-umami-event-title="{{ .Title }}">
-              <div class="post-card-main">
-                <div class="post-meta">
-                  <span class="post-date">{{ .Date | time.Format ":date_medium" }}</span>
-                  {{ with .Params.author }}
-                  <span class="post-author-tag">{{ . }}</span>
-                  {{ end }}
-                  {{ $section := .Section }}
-                  {{ if eq $section "news" }}<span class="section-badge section-badge--news">News</span>
-                  {{ else if eq $section "tutorials" }}<span class="section-badge section-badge--tutorials">Tutorial</span>
-                  {{ else if eq $section "posts" }}<span class="section-badge section-badge--posts">Post</span>
-                  {{ end }}
-                </div>
-                <h2 class="post-card-title">{{ .Title }}</h2>
-                {{ $excerpt := .Summary | plainify }}
-                {{ with .Params.description }}{{ $excerpt = . | plainify }}{{ end }}
-                <p class="post-card-excerpt">{{ $excerpt | truncate 280 }}</p>
-                {{ with .Params.tags }}
-                <div class="post-card-tags">
-                  {{ range first 4 . }}
-                  <span class="tag">{{ . }}</span>
-                  {{ end }}
-                </div>
+      <div class="home-posts-col">
+        <div class="section-header">
+          <span class="section-title">{{ i18n "section_latest_posts" }}</span>
+          <a href="{{ "/posts" | relLangURL }}" class="section-link" data-umami-event="home-all-posts">{{ i18n "section_all_posts" }}</a>
+        </div>
+        {{ if $allPosts }}
+        <div class="posts-grid" id="home-posts-grid">
+          {{ range $allPosts }}
+          <a href="{{ .RelPermalink }}" class="post-card" data-umami-event="home-post-click" data-umami-event-title="{{ .Title }}">
+            <div class="post-card-main">
+              <div class="post-meta">
+                <span class="post-date">{{ .Date | time.Format ":date_medium" }}</span>
+                {{ with .Params.author }}
+                <span class="post-author-tag">{{ . }}</span>
+                {{ end }}
+                {{ $section := .Section }}
+                {{ if eq $section "news" }}<span class="section-badge section-badge--news">News</span>
+                {{ else if eq $section "tutorials" }}<span class="section-badge section-badge--tutorials">Tutorial</span>
+                {{ else if eq $section "posts" }}<span class="section-badge section-badge--posts">Post</span>
                 {{ end }}
               </div>
-              <span class="post-card-arrow">→</span>
-            </a>
-            {{ end }}
-          </div>
-          {{ end }}
-        </div>
-
-        {{/* ── 30% — Events Timeline ───────────── */}}
-        <div class="home-events-col">
-          <div class="section-header">
-            <span class="section-title">{{ i18n "section_upcoming_events" }}</span>
-            <a href="{{ "/events" | relLangURL }}" class="section-link" data-umami-event="home-all-events">{{ i18n "section_all_events" }}</a>
-          </div>
-          {{ if $upcomingEvents }}
-          <div class="home-timeline">
-            {{ range $upcomingEvents }}
-            {{ $featured := .Params.featured | default false }}
-            <div class="home-timeline-item{{ if $featured }} home-timeline-item--featured{{ end }}">
-              <a href="{{ .RelPermalink }}" class="home-timeline-card" data-umami-event="home-event-click" data-umami-event-title="{{ .Title }}">
-                <div>
-                  {{ with .Params.event_type }}
-                  <span class="event-type-badge event-type-{{ . | lower | replaceRE "[^a-z]" "-" }}">{{ . }}</span>
-                  {{ end }}
-                </div>
-                <p class="home-timeline-date">{{ .Date | time.Format ":date_medium" }}</p>
-                <p class="home-timeline-title">{{ .Title }}</p>
-                {{ with .Params.location }}
-                <p class="home-timeline-location">📍 {{ . }}</p>
+              <h2 class="post-card-title">{{ .Title }}</h2>
+              {{ $excerpt := .Summary | plainify }}
+              {{ with .Params.description }}{{ $excerpt = . | plainify }}{{ end }}
+              <p class="post-card-excerpt">{{ $excerpt | truncate 280 }}</p>
+              {{ with .Params.tags }}
+              <div class="post-card-tags">
+                {{ range first 4 . }}
+                <span class="tag">{{ . }}</span>
                 {{ end }}
-              </a>
+              </div>
+              {{ end }}
             </div>
-            {{ end }}
-          </div>
-          {{ else }}
-          <p class="text-muted font-mono" style="font-size:.85rem">{{ i18n "no_events" }}</p>
+            <span class="post-card-arrow">→</span>
+          </a>
           {{ end }}
         </div>
-
+        {{ end }}
       </div>
     </div>
   </section>
