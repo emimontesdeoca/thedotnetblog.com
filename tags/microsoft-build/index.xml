@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Microsoft Build | The .NET Blog</title><link>https://thedotnetblog.com/tags/microsoft-build/</link><description>Articles, tutorials and insights from the .NET community.</description><generator>Hugo</generator><language>en</language><managingEditor>@thedotnetblog (The .NET Blog)</managingEditor><webMaster>@thedotnetblog</webMaster><lastBuildDate>Sat, 19 Sep 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://thedotnetblog.com/tags/microsoft-build/index.xml" rel="self" type="application/rss+xml"/><item><title>The Agent Framework Sessions From Build 2026 Worth Following</title><link>https://thedotnetblog.com/news/emiliano-montesdeoca/agent-framework-build-2026-session-map/</link><pubDate>Sat, 19 Sep 2026 00:00:00 +0000</pubDate><author>Emiliano Montesdeoca</author><guid>https://thedotnetblog.com/news/emiliano-montesdeoca/agent-framework-build-2026-session-map/</guid><description>The latest Microsoft Agent Framework Build guide is useful as a map of where the platform conversation is going: hosted agents, observability, governance, multi-agent design, and open interoperability.</description><content:encoded>&lt;p&gt;Build session roundups are most useful when they help you see the direction of a platform, not just its calendar.&lt;/p&gt;
+&lt;p&gt;That is what this &lt;strong&gt;Microsoft Agent Framework at Build 2026&lt;/strong&gt; post does fairly well.&lt;/p&gt;
+&lt;p&gt;The sessions point to a few very clear themes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;hosted agents&lt;/li&gt;
+&lt;li&gt;harness patterns&lt;/li&gt;
+&lt;li&gt;observability and evaluation&lt;/li&gt;
+&lt;li&gt;governance&lt;/li&gt;
+&lt;li&gt;multi-agent workflows&lt;/li&gt;
+&lt;li&gt;interoperability with broader Foundry tooling&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="this-is-less-about-sessions-and-more-about-strategic-emphasis"&gt;This is less about sessions and more about strategic emphasis&lt;/h2&gt;
+&lt;p&gt;I do not think the most valuable part of this roundup is simply which talk to watch first.&lt;/p&gt;
+&lt;p&gt;The more useful part is what the session lineup reveals about Microsoft’s priorities.&lt;/p&gt;
+&lt;p&gt;The platform conversation is clearly shifting toward:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;productionization&lt;/li&gt;
+&lt;li&gt;visibility&lt;/li&gt;
+&lt;li&gt;runtime structure&lt;/li&gt;
+&lt;li&gt;governance&lt;/li&gt;
+&lt;li&gt;interop between frameworks and tools&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;That is a healthier direction than endless demo-driven novelty.&lt;/p&gt;
+&lt;h2 id="my-take"&gt;My take&lt;/h2&gt;
+&lt;p&gt;If you are tracking Agent Framework seriously, this roundup is less about what to watch this week and more about understanding which conversations Microsoft is prioritizing now.&lt;/p&gt;
+&lt;p&gt;That alone makes it useful.&lt;/p&gt;
+&lt;p&gt;Original post: &lt;a href="https://devblogs.microsoft.com/agent-framework/microsoft-agent-framework-at-build-2026/"&gt;Microsoft Agent Framework at BUILD 2026&lt;/a&gt;&lt;/p&gt;</content:encoded></item></channel></rss>
