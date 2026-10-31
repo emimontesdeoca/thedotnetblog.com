@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Pull Requests | The .NET Blog</title><link>https://thedotnetblog.com/tags/pull-requests/</link><description>Articles, tutorials and insights from the .NET community.</description><generator>Hugo</generator><language>en</language><managingEditor>@thedotnetblog (The .NET Blog)</managingEditor><webMaster>@thedotnetblog</webMaster><lastBuildDate>Sat, 31 Oct 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://thedotnetblog.com/tags/pull-requests/index.xml" rel="self" type="application/rss+xml"/><item><title>Reviewing Pull Requests Inside Visual Studio Is Exactly the Kind of Friction Reduction I Like</title><link>https://thedotnetblog.com/news/emiliano-montesdeoca/visual-studio-pull-request-review-inside-the-ide/</link><pubDate>Sat, 31 Oct 2026 00:00:00 +0000</pubDate><author>Emiliano Montesdeoca</author><guid>https://thedotnetblog.com/news/emiliano-montesdeoca/visual-studio-pull-request-review-inside-the-ide/</guid><description>Visual Studio can now review pull requests end to end without leaving the IDE. That may sound incremental, but for teams living in Visual Studio all day, it removes a lot of unnecessary context switching.</description><content:encoded>&lt;p&gt;The browser has been stealing too much of the code review workflow for too long.&lt;/p&gt;
+&lt;p&gt;So I am very happy to see Visual Studio pushing further into &lt;strong&gt;end-to-end pull request review inside the IDE&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;This is one of those features that may not generate huge headlines, but it can absolutely improve everyday development.&lt;/p&gt;
+&lt;h2 id="the-main-value-is-simple-less-context-switching"&gt;The main value is simple: less context switching&lt;/h2&gt;
+&lt;p&gt;When your review loop lives partly in the IDE and partly in the browser, the friction adds up:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;open the PR elsewhere&lt;/li&gt;
+&lt;li&gt;inspect changes in one tool&lt;/li&gt;
+&lt;li&gt;jump back to the solution for deeper investigation&lt;/li&gt;
+&lt;li&gt;switch again to comment or approve&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;It is not catastrophic. It is just inefficient.&lt;/p&gt;
+&lt;p&gt;If Visual Studio can let you open, inspect, comment, approve, and merge from the same working environment, that is a real productivity win.&lt;/p&gt;
+&lt;h2 id="the-review-without-checkout-option-is-especially-nice"&gt;The “review without checkout” option is especially nice&lt;/h2&gt;
+&lt;p&gt;One part I particularly like is the ability to review without checking out the PR branch.&lt;/p&gt;
+&lt;p&gt;That sounds small, but it is perfect for:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;quick review passes&lt;/li&gt;
+&lt;li&gt;interrupt-driven feedback requests&lt;/li&gt;
+&lt;li&gt;keeping your current branch and local state intact&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;That is exactly the kind of flexibility good code review tooling needs.&lt;/p&gt;
+&lt;h2 id="my-take"&gt;My take&lt;/h2&gt;
+&lt;p&gt;This is not a revolutionary feature.&lt;/p&gt;
+&lt;p&gt;It is something better: a practical one.&lt;/p&gt;
+&lt;p&gt;For teams spending most of their day in Visual Studio, tighter PR review support means fewer workflow breaks and a smoother path from inspection to action.&lt;/p&gt;
+&lt;p&gt;That is a worthwhile improvement in my book.&lt;/p&gt;
+&lt;p&gt;Original post: &lt;a href="https://devblogs.microsoft.com/visualstudio/review-pull-requests-without-leaving-visual-studio/"&gt;Review pull requests without leaving Visual Studio&lt;/a&gt;&lt;/p&gt;</content:encoded></item></channel></rss>
