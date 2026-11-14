@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Azure Logic Apps | The .NET Blog</title><link>https://thedotnetblog.com/tags/azure-logic-apps/</link><description>Articles, tutorials and insights from the .NET community.</description><generator>Hugo</generator><language>en</language><managingEditor>@thedotnetblog (The .NET Blog)</managingEditor><webMaster>@thedotnetblog</webMaster><lastBuildDate>Tue, 03 Nov 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://thedotnetblog.com/tags/azure-logic-apps/index.xml" rel="self" type="application/rss+xml"/><item><title>The Cosmos DB Built-In Connector for Logic Apps Is More Relevant Than It First Looks</title><link>https://thedotnetblog.com/news/emiliano-montesdeoca/cosmosdb-logic-apps-built-in-connector-ga/</link><pubDate>Tue, 03 Nov 2026 00:00:00 +0000</pubDate><author>Emiliano Montesdeoca</author><guid>https://thedotnetblog.com/news/emiliano-montesdeoca/cosmosdb-logic-apps-built-in-connector-ga/</guid><description>The Azure Cosmos DB built-in connector for Logic Apps Standard is now generally available. The key benefit is not just connectivity, but lower-latency in-process execution, change feed support, and a cleaner path to event-driven and AI-oriented workflows.</description><content:encoded>&lt;p&gt;When people hear “connector announcement,” it is easy to assume the story is minor.&lt;/p&gt;
+&lt;p&gt;In this case, I think the announcement deserves more credit.&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;Azure Cosmos DB built-in connector for Logic Apps Standard&lt;/strong&gt; is now generally available, and what makes it interesting is not just that Logic Apps can talk to Cosmos DB. It is that the integration becomes more native, more performant, and more realistic for event-driven workflows.&lt;/p&gt;
+&lt;h2 id="why-built-in-matters"&gt;Why built-in matters&lt;/h2&gt;
+&lt;p&gt;The difference between managed and built-in connectors is not just deployment trivia.&lt;/p&gt;
+&lt;p&gt;Running in-process with the Logic Apps runtime means:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;lower latency&lt;/li&gt;
+&lt;li&gt;better throughput&lt;/li&gt;
+&lt;li&gt;fewer external hops&lt;/li&gt;
+&lt;li&gt;a cleaner fit for high-volume or reactive workflows&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;And when you add &lt;strong&gt;change feed triggers&lt;/strong&gt;, &lt;strong&gt;bulk operations&lt;/strong&gt;, &lt;strong&gt;patch support&lt;/strong&gt;, and &lt;strong&gt;Entra ID authentication&lt;/strong&gt;, the connector starts to look like something much more serious than “simple workflow plumbing.”&lt;/p&gt;
+&lt;h2 id="the-ai-angle-is-also-real"&gt;The AI angle is also real&lt;/h2&gt;
+&lt;p&gt;The post’s discussion of RAG pipelines, embedding flows, and knowledge-base patterns is what made this stand out more for me.&lt;/p&gt;
+&lt;p&gt;Once Logic Apps and Cosmos DB are integrated this tightly, the platform can support:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;reactive ingestion flows&lt;/li&gt;
+&lt;li&gt;document enrichment pipelines&lt;/li&gt;
+&lt;li&gt;vector-related workflows&lt;/li&gt;
+&lt;li&gt;no-code or low-code orchestration around AI components&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;That makes the connector relevant to more than integration specialists.&lt;/p&gt;
+&lt;h2 id="my-take"&gt;My take&lt;/h2&gt;
+&lt;p&gt;This is the kind of release that becomes more valuable the more you think about real workflows instead of product categories.&lt;/p&gt;
+&lt;p&gt;For teams using Logic Apps Standard and Cosmos DB together, the GA connector gives a stronger foundation for event-driven integration and AI-adjacent automation without custom glue everywhere.&lt;/p&gt;
+&lt;p&gt;That is worth paying attention to.&lt;/p&gt;
+&lt;p&gt;Original post: &lt;a href="https://devblogs.microsoft.com/cosmosdb/announcing-general-availability-of-the-azure-cosmos-db-built-in-connector-for-logic-apps-standard/"&gt;Announcing General Availability of the Azure Cosmos DB Built-in Connector for Logic Apps Standard&lt;/a&gt;&lt;/p&gt;</content:encoded></item></channel></rss>
